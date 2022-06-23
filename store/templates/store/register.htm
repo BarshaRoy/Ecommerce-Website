@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ecom</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+</head>
+<body>
+    <h3> Register </h3>
+    <form action="/register" method="post">
+    {% csrf_token %}
+        <label for="">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Username" Required>
+        <br>
+        <label for="">First Name:</label>
+        <input type="text" id="fname" name="fname" placeholder="First name" Required>
+        <br>
+        <label for="">Last Name:</label>
+        <input type="text" id="lname" name="lname" placeholder="Last name" Required>
+        <br>
+        <label for="">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Email" Required>
+        <br>
+        <label for="">Password:</label>
+        <input type="password" id="pass1" name="pass1" placeholder="Create a password" Required>
+        <br>
+        <label for="">Confirm Password:</label>
+        <input type="password" id="pass2" name="pass2" placeholder="Confirm your password" Required>
+        <br>
+        <button type="submit" class="btn btn-warning">Register</button>
+    </form>
+</body>
+<html>
+

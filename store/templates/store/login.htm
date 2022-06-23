@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ecom</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+</head>
+<body>
+    <h3> </h3>
+    <form action="/login" method="post">
+    {% csrf_token %}
+        <label for="">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your Username" Required>
+        <br>
+        <label for="">Password:</label>
+        <input type="password" id="pass1" name="pass1" placeholder="Enter your password" Required><br>
+        
+        <button type="submit" class="btn btn-warning">Login</button>
+    </form>
+</body>
+<html>
+
